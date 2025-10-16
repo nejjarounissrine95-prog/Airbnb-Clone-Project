@@ -23,4 +23,57 @@ The main focus areas are:
 -  **Backend Developer:** Responsible for implementing API endpoints, database schemas, and business logic.  
 -  **Database Administrator:** Manages database design, indexing, and optimizations.  
 -  **DevOps Engineer:** Handles deployment, monitoring, and scaling of the backend services.  
--  **QA Engineer:** Ensures the backend functionalities are thoroughly tested and meet quality standards.   
+-  **QA Engineer:** Ensures the backend functionalities are thoroughly tested and meet quality standards.
+## Database Design
+### Main Entities:
+1. **User**
+   - Id
+   - Name
+   - Email
+   - Password
+   - Phone_number
+   - Created_at
+   - Updated_at
+
+2. **Property**
+   - Id
+   - Owner_Id (linked to User)
+   - Title
+   - Description
+   - Location
+   - Price
+   - Created_at
+   - Updated_at
+
+3. **Booking**
+   - Id
+   - User_Id (linked to User)
+   - Property_Id (linked to Property)
+   - Start_date
+   - End_date
+   - Status (Pending, Confirmed, Cancelled)
+   - Created_at
+   - Updated_at
+
+4. **Review**
+   - Id
+   - Booking_Id (linked to Booking)
+   - Rating
+   - Comment
+   - Created_at
+
+5. **Payment**
+   - Id
+   - Booking_Id (linked to Booking)
+   - Amount
+   - Status (Paid, Pending, Failed)
+   - Payment_method
+   - Created_at
+
+### Relationships
+-  A **user** can own many **properties**.
+-  A **user** can make many **bookings**.
+-  A **property** can have many **bookings**.
+-  A **booking** belongs to one **property** and one **user**.
+-  A **review** belongs to one **booking** (this ensures reviews come from verified stays).
+-  A **payment** belongs to one **booking**.
