@@ -18,4 +18,9 @@ The main focus areas are:
 5. **Celery:** For handling asynchronous tasks such as sending notifications or processing payments.  
 6. **Redis:** Used for caching and session management.  
 7. **Docker:** Containerization tool for consistent development and deployment environments.  
-8. **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.  
+8. **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
+## Team Roles
+-  **Backend Developer:** Responsible for implementing API endpoints, database schemas, and business logic.  
+-  **Database Administrator:** Manages database design, indexing, and optimizations.  
+-  **DevOps Engineer:** Handles deployment, monitoring, and scaling of the backend services.  
+-  **QA Engineer:** Ensures the backend functionalities are thoroughly tested and meet quality standards.   
