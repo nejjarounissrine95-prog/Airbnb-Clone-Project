@@ -77,3 +77,22 @@ The main focus areas are:
 -  A **booking** belongs to one **property** and one **user**.
 -  A **review** belongs to one **booking** (this ensures reviews come from verified stays).
 -  A **payment** belongs to one **booking**.
+## Feature Breakdown
+
+1. **User Management**  
+This feature handles user registration, login, and profile management. It ensures that only authenticated users can access specific features, providing security and personalized experiences.  
+
+2. **Property Management**  
+Allows property owners to add, update, or delete listings. This feature ensures users can view accurate property details, such as price, location, and availability.  
+
+3. **Booking System**  
+Enables users to reserve properties and manage their bookings. It ensures that reservations are processed correctly, avoiding double bookings and ensuring smooth scheduling.  
+
+4. **Payment Processing**  
+Handles all payment transactions securely between guests and hosts. It helps record payment details, confirm successful payments, and manage refunds if needed.  
+
+5. **Review System**  
+Lets users leave feedback and ratings after a stay. This feature helps build trust and transparency among users by showing property quality through reviews.  
+
+6.  **Data Optimization**  
+Improves how data is stored and retrieved in the database. This feature ensures the app runs fast and efficiently, even when handling large amounts of user and booking data.  
