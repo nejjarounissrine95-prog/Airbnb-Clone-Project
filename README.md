@@ -95,4 +95,38 @@ Handles all payment transactions securely between guests and hosts. It helps rec
 Lets users leave feedback and ratings after a stay. This feature helps build trust and transparency among users by showing property quality through reviews.  
 
 6.  **Data Optimization**  
-Improves how data is stored and retrieved in the database. This feature ensures the app runs fast and efficiently, even when handling large amounts of user and booking data.  
+Improves how data is stored and retrieved in the database. This feature ensures the app runs fast and efficiently, even when handling large amounts of user and booking data.
+## API Security 
+The backend APIs of the Airbnb Clone are secured using multiple measures to protect user data, financial transactions, and ensure safe operations.
+
+### Security Measures
+
+1. **Authentication**  
+
+Ensures that only registered users can access protected endpoints by verifying their identity with login credentials or secure tokens.
+
+- Why important: Prevents unauthorized users from accessing sensitive data like bookings, payments, or personal information.
+
+2. **Authorization**  
+
+Controls what each authenticated user can do. Only authorized users can perform certain actions
+
+- Why important: Ensures users cannot access or modify data they shouldn’t, protecting other users’ information.
+
+3. **Rate Limiting**  
+
+Limits the number of requests a user or IP can make in a short period.
+
+- Why important: Protects the system from spamming, abuse, or DDoS attacks that could crash the application.
+
+4. **Data Encryption**  
+
+Sensitive data (passwords, payment info, personal details) is transmitted securely via HTTPS and stored encrypted in the database.
+
+- Why important: Prevents attackers from intercepting or stealing confidential information.
+
+5. **Input Validation and Sanitization**  
+
+All user input is validated and sanitized to prevent malicious or unexpected data from entering the system.
+
+- Why important: Protects against attacks like SQL injection, broken functionality, and corrupted data.
