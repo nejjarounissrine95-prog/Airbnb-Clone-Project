@@ -143,18 +143,21 @@ All user input is validated and sanitized to prevent malicious or unexpected dat
 
 ## CI/CD Pipeline
 
-The Airbnb Clone project uses a CI/CD pipeline to automate testing and deployment of code changes, ensuring the application remains stable and up-to-date.
+The Airbnb Clone project implements Continuous Integration **(CI)** and Continuous Deployment **(CD)** to streamline the development workflow.  
 
-- **Continuous Integration (CI):** Automatically tests all code changes to catch errors before they affect the application.  
-- **Continuous Deployment (CD):** Automatically deploys approved changes to the live environment, making updates fast and reliable.
+- **Continuous Integration (CI)** ensures that every new piece of code is automatically tested and integrated into the main branch, helping developers detect bugs early and maintain a stable codebase.  
+- **Continuous Deployment (CD)** automates the deployment of these changes to staging or production environments, reducing manual errors and accelerating feature delivery.  
   
 ### Why CI/CD is important for Airbnb Clone
 
-- Prevents mistakes: Automatically tests your backend code so you don’t push broken code.
+- **Faster releases:** New updates reach users more quickly.  
 
-- Saves time: Automatically deploys updates to your app, no manual work.
+- **Improved collaboration:** Developers can work on different features simultaneously without conflicts.  
 
-- Keeps app stable: Makes sure new features don’t break existing ones.
+- **Higher quality assurance:** Automated testing ensures reliability before deployment.
+  
+- **Consistency:** Every environment (development, testing, production) behaves the same thanks to tools like Docker.  
+
 
 ### Tools Used
 
